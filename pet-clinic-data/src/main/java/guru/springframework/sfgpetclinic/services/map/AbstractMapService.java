@@ -1,6 +1,7 @@
 package guru.springframework.sfgpetclinic.services.map;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
@@ -8,7 +9,7 @@ public abstract class AbstractMapService<T, ID> {
     protected Map<ID, T> map = new HashMap<>();
 
     public Set<T> findAll() {
-        return (Set<T>) map.values();
+        return new HashSet<>(map.values());
     }
 
     public T findById(ID id) {

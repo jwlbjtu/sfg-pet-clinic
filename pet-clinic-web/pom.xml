@@ -13,7 +13,7 @@
         <dependency>
             <groupId>guru.springframework</groupId>
             <artifactId>pet-clinic-data</artifactId>
-            <version>0.0.4</version>
+            <version>0.0.4-SNAPSHOT</version>
         </dependency>
 
         <dependency>
